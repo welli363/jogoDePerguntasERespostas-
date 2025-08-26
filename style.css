@@ -1,47 +1,57 @@
-
-.tela_1,.tela_2,.tela_3,
-.tela_4,.tela_5, .tela_6, .tela_7,
-.tela_8, .tela_9, .tela_10, 
-.tela_11, .tela_12, .tela_13, .tela_14, .tela_15, .tela_16 {
-    display: none;
-    margin: 10px;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-    min-height: 100px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
-h2{
-    color: #fff;
+.tela1, .tela2, .tela3, .tela4, .tela5, .tela6, .tela7, .tela8, .tela9, .tela10, .telaFinal{
+    display: none;
+}
+.pergunta, .msgFinal{
+    color: white;
+    margin: 40px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+#btnComecar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: Arial;
     background-color: #000;
 }
 
-.container-button{
+.containerBotoes{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-auto-flow: 10px;
-    width: 250px;
-    height: 100px;
     padding: 10px;
     gap: 10px;
 }
 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 5px;
     font-size: 18px;
+    height: 40px;
+    width: 50%;
     border: none;
     border-radius: 10px;
     background: white;
     color: black;
     cursor: pointer;
     transition: 0.5s;
-    }
+}
 
 button:hover {
     background: #2980b9;

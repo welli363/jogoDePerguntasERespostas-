@@ -1,158 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Jegue Quizz</Q></title>
+    <title>Quiz</title>
 </head>
 <body>
-    <div class="tela_inicial">
-        <h2 class="tela_0">Começar a jogar
-        <button id="botao">Começar</button>
-        </h2>
-
-        <div class="tela_1">1. Quanto é 4 x 2?
-            <div class="container-button">
-                <button class="error">18</button>
-                <button id="certo">8</button>
-                <button class="error">10</button>
-                <button class="error">6</button>
+    <div class="telaInicial">
+        <div class="tela0">
+            <p class="pergunta">Começar a jogar.</p>
+            <button id="btnComecar">Começar</button>
+        </div>
+        <div class="tela1">
+            <p class="pergunta">1. Qual é o resultado da divisão 487/8?</p>
+            <div class="containerBotoes">
+                <button id="respostaCerta1">60,875</button>
+                <button class="erro">80,47</button>
+                <button class="erro">60,857</button>
+                <button class="erro">90,789</button>
             </div>
         </div>
-            
-        <div class="tela_2">2. Quem foi a primeira presindente mulher do Brasil?
-            <div class="container-button">
-                <button class="error">Michelle</button>
-                <button class="error"> Gabriele</button>
-                <button id="certo2">D.Russef</button>
-                <button class="error">Joana</button>
+        <div class="tela2">
+            <p class="pergunta">2. Qual é o verdadeiro nome do personagem <br> principal do filme "Homem Aranha", <br> lançado em 2002?</p>
+            <div class="containerBotoes">
+                <button classe="erro">Tom Holland</button>
+                <button id="respostaCerta2">Tobey Maguire</button>
+                <button class="erro">Andrew Garfield</button>
+                <button class="erro">Hudson Thames</button>
             </div>
         </div>
-            
-        <div class="tela_3">3. Qual é o maior país do mundo?
-            <div class="container-button">
-                <button class="error">China</button>
-                <button class="error">Brasil</button>
-                <button class="error">India</button>
-                <button id="certo3">Rússia</button>
+        <div class="tela3">
+            <p class="pergunta">3.Com quantos anos morreu <br> Silvio Santos em 2024?</p>
+            <div class="containerBotoes">
+                <button class="erro">88</button>
+                <button class="erro">90</button>
+                <button class="erro">95</button>
+                <button id="respostaCerta3">93</button>
             </div>
         </div>
-            
-        <div class="tela_4">4. Qual foi o primeiro presidente do Brasil?
-            <div class="container-butto">
-                <button id="certo4">Marechal </button>
-                <button class="error">Bolsonaro</button>
-                <button class="error">Getulio Vargas</button>
-                <button class="error">Lula</button>
+        <div class="tela4">
+            <p class="pergunta">4.Quantos estados existem do <br> Brasil atualmente, tirando o DF?</p>
+            <div class="containerBotoes">
+                <button class="erro">30</button>
+                <button class="erro">27</button>
+                <button id="respostaCerta4">26</button>
+                <button class="erro">20</button>
             </div>
         </div>
-            
-        <div class="tela_5">5. Quando foi abolida a escravidão?
-            <div class="container-butto">
-                <button class="error">1887</button>
-                <button class="error">1900</button>
-                <button id="certo5">1888</button>
-                <button class="error">1760</button>
+        <div class="tela5">
+            <p class="pergunta">5. Qual é a capitaol do estado do <br> Acre na Região norte do Brasil?</p>
+            <div class="containerBotoes">
+                <button class="erro">Manaus</button>
+                <button class="erro">Rio Branco</button>
+                <button id="respostaCerta5">Rio Branco</button>
+                <button class="erro">Porto Velho</button>
             </div>
         </div>
-            
-        <div class="tela_6">6. Qual é o maior oceano do mundo?
-            <div class="container-butto">
-                <button class="error">Amazonas</button>
-                <button class="error">Índico</button>
-                <button class="error">Atlântico</button>
-                <button id="certo6">Pacífio</button>
+        <div class="tela6">
+            <p class="pergunta">6. Quantos ossos tem um corpo humano?</p>
+            <div class="conatinerBotoes">
+                <button class="erro">200</button>
+                <button id="respostaCerta6">206</button>
+                <button class="erro">150</button>
+                <button class="erro">180</button>
             </div>
         </div>
-
-        <div class="tela_7">7. Quantos planetas rochosos existem no nosso Sistema Solar?
-            <div class="container-butto">
-                <button class="error">2</button>
-                <button class="error">6</button>
-                <button class="error">3</button>
-                <button id="certo7">4</button>
-            </div>
+        <div class="tela7">
+            <p class="pergunta">7. Qual é o tamanho da maior pessoa do planeta Terra?</p>
+            <div class="containerBotoes">
+                <button id="respostaCerta7">2,72m</button>
+                <button class="erro">2,50m</button>
+                <button class="erro">2,40m</button>
+                <button class="erro">2,30m</button>
         </div>
-
-        <div class="tela_8">8. Qual país é conhecido como a "Terra do Sol Nascente"?
-            <div class="container-butto">
-                <button class="error">China</button>
-                <button class="error">Brasil</button>
-                <button id="certo8">Japão</button>
-                <button class="error">Uruguai</button>
-            </div>
-        </div> 
-
-        <div class="tela_9">9. Qual é a capital do Canadá?
-            <div class="container-butto">
-                <button class="error">Toronto</button>
-                <button class="error">Nova York</button>
-                <button id="certo9"> Ottawa</button>
-                <button class="error">Califórnia</button>
-            </div>
-        </div> 
-
-        <div class="tela_10">10. Quando caiu o muro de Berlim?
-            <div class="container-butto">
-                <button class="error">1990</button>
-                <button id="certo10">1989</button>
-                <button class="error"> 1899</button>
-                <button class="error">1950</button>
-            </div>
-        </div> 
-
-        <div class="tela_11">11. Qual a sigla para Rede de Área Local
-            <div class="container-butto">
-                <button class="error">TAN</button>
-                <button id="certo11">LAN</button>
-                <button class="error"> MAL</button>
-                <button class="error">NAL</button>
-            </div>
-        </div> 
-
-        <div class="tela_12">12. Quem é considerado o pai da computação moderna?
-            <div class="container-butto">
-                <button class="error">Luciano Hulk</button>
-                <button class="error">Bill Gates</button>
-                <button id="certo12">Alan Turing</button>
-                <button class="error">Neymar</button>
-            </div>
-        </div> 
-
-        <div class="tela_13">13. Qual o nome da força que nos puxa para o centro da Terra?
-            <div class="container-butto">
-                <button class="error">Eletroatividade</button>
-                <button id="certo13">Gravidade</button>
-                <button class="error">Radioatividade</button>
-                <button class="error">Negatividade</button>
-            </div>
-        </div> 
-
-        <div class="tela_14">14. Qual banda de rock é famosa pela música "Bohemian Rhapsody"?
-            <div class="container-butto">
-                <button class="error">U2</button>
-                <button id="certo14"> Queen</button>
-                <button class="error"> Beatles</button>
-                <button class="error">The Who</button>
-            </div>
-        </div> 
-
-        <div class="tela_15">15. Quantos planetas tem o sistema solar?
-            <div class="container-butto">
-                <button class="error">12</button>
-                <button id="certo15">8</button>
-                <button class="error">10</button>
-                <button class="error">11</button>
-            </div>
-        </div> 
-
-        <div class="tela_16">Finalmente chegou no final. GLÓRIA!</div>
+        <div class="tela8">
+            <p class="pergunta">8. Quando foi criada a <br> primeira televisão do mundo?</p>
+            <div class="containerBotoes">
+                <button class="erro">1920</button>
+                <button id="respostaCerta8">1925</button>
+                <button class="erro">1930</button>
+                <button class="erro">1915</button>
+        </div>
+        <div class="tela9">
+            <p class="pergunta">9. Qual é a cidade mais antiga do Brasil?</p>
+            <div class="containerBotoes">
+                <button class="erro">Salvador</button>
+                <button id="respostaCerta9">São Vicente</button>
+                <button class="erro">Rio de Janeiro</button>
+                <button class="erro">Olinda</button>
+        </div>
+        <div class="tela10">
+            <p class="pergunta">10. Quando foi abolida a escravidão no Brasil?</p>
+            <div class="containerBotoes">
+                <button class="erro">1885</button>
+                <button class="erro">1890</button>
+                <button class="erro">1875</button>
+                <button id="respostaCerta10">1888</button>
+        </div>
+        <div class="telaFinal">
+            <p class="msgFinal">Parabéns, você chegou ao final do quiz.</p>
+            <button id="voltarInicio">Voltar</button>
+        </div>
     </div>
+
+
     <script src="main.js"></script>
 </body>
 </html>
